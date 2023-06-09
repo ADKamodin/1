@@ -197,5 +197,15 @@ namespace TRPOLR2
 
 
         }
+
+        public static Корпус Корпус()
+        {
+            Console.WriteLine("Введите название");
+            string название = Console.ReadLine();
+            Console.WriteLine("Введите адрес");
+            string адрес = Console.ReadLine();
+           
+            return new Корпус(название, адрес, Сотрудник(), Организация());
+        }
 	}
 }
