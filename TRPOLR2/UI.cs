@@ -105,6 +105,12 @@ namespace TRPOLR2
             Console.WriteLine($"студент.Дата_рождения = {студент.ДатаРождения.ToShortDateString()}");
             Print(студент.Группа);
         }
-
+        public static void Print(Корпус корпус)
+        {
+            Console.WriteLine($"корпус.Название = {корпус.Название}");
+            Console.WriteLine($"корпус.Адрес = {корпус.Адрес}");
+            Print(корпус.Комендант);
+            Print(корпус.Организация);
+        }
     }
 }
